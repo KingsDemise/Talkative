@@ -84,7 +84,7 @@ function Signup() {
             setIsLoading(true);
             updateProfile(createdUser.user,{
                     displayName: userState.userName,
-                    photoURL: `http://gravatar.com/avatar/${createdUser.user.uid}?d=identicon`
+                    photoURL: `https://ui-avatars.com/api/?name=${userState.userName}&?rounded=true&?background=random`
                 })
                 .then(() => {
                     setIsLoading(false);
